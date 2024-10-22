@@ -1,0 +1,79 @@
+html,
+body {
+	margin: 0%;
+	padding: 0%;
+}
+
+/* reset margin and padding */
+
+header {
+	display: flex;
+	max-width: 100vw;
+	height: 15vh;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+header > img {
+	max-width: 100vw;
+	max-height: 7vh;
+}
+.dropdown {
+	flex: 2;
+	display: flex;
+	align-self: center;
+	flex-direction: column;
+}
+
+.dropdown > div {
+	display: flex;
+	align-items: baseline;
+	justify-content: baseline;
+}
+
+.dropdown > ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.dropdown > ul > li {
+	display: none;
+}
+
+.dropdown:hover > ul > li {
+	display: block;
+}
+
+.dropdown:hover {
+	align-self: flex-start;
+	justify-self: center;
+}
+
+.anchor {
+	flex: 1;
+}
+
+.dropdown > div > i {
+	margin-left: 10px;
+}
+
+a {
+	align-items: center;
+}
+
+p {
+	text-align: center;
+	font-size: 14px;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    height: 8vh;
+    min-width: 70vw;
+}
