@@ -337,3 +337,33 @@ nav {
 {
 	width: 100%;
 }
+
+.wordsfromcommunity
+{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 60vh;
+}
+
+.wordsfromcommunity > div
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 60vw;
+}
+
+.wordsfromcommunity > h1
+{
+	max-width: 20vw;
+	text-align: center;
+}
+
+.wordsfromcommunity > div > img
+{
+	width: 20vw;
+	margin: 20px;
+}
+
+
