@@ -1,0 +1,24 @@
+.whatstrending {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url("../images/bg-icon-empty.png");
+	height: 100%;
+	background-color: rgba(241, 241, 241, 0.548);
+}
+
+.whatstrending > div {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+}
+.whatstrending > div > div {
+	width: 20vw;
+	margin: 20px;
+	background-color: rgb(255, 255, 255);
+}
+
+.whatstrending > div > div > img {
+	width: 100%;
+}

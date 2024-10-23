@@ -1,0 +1,105 @@
+header {
+	z-index: 10;
+	position: fixed;
+	display: flex;
+	width: 96vw;
+	height: 15vh;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	font-weight: 400;
+}
+
+button {
+	background-color: #0078be;
+	width: 8vw;
+	border-radius: 50px;
+	border-width: 0px;
+	margin-left: 10px;
+	color: white;
+}
+
+header > img {
+	max-width: 100vw;
+	max-height: 7vh;
+}
+
+header li {
+	margin-left: 2vw;
+}
+
+.dropdown {
+	flex: 2;
+	display: flex;
+	align-self: center;
+	flex-direction: column;
+}
+
+.dropdown > div {
+	display: flex;
+	align-items: baseline;
+	justify-content: baseline;
+}
+
+.dropdown > ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.dropdown > ul > li {
+	display: none;
+}
+
+.dropdown:hover > ul > li {
+	display: block;
+}
+
+.dropdown:hover > ul
+{
+	background-color: white;
+	color: rgb(41, 41, 41);
+	border-radius: 5px;
+	}
+
+.dropdown:hover {
+	
+	align-self: flex-start;
+	justify-self: center;
+}
+
+.anchor {
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.anchor:hover
+{
+	background-color: rgba(255, 255, 255, 0.402);
+	transition: 0.5s;
+}
+
+.dropdown > div > i {
+	margin-left: 10px;
+}
+
+a {
+	align-items: center;
+}
+
+p {
+	text-align: center;
+	font-size: 14px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	height: 8vh;
+	min-width: 70vw;
+}

@@ -1,0 +1,80 @@
+.foundationssection {
+	height: 100vh;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.foundationscard {
+	width: 15vw;
+	height: 85vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: baseline;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: rgb(243, 242, 239);
+}
+
+.comcard:hover
+{
+	background-color: rgb(238, 236, 255);
+	transition: 0.5s;
+}
+
+.sharecard:hover
+{
+	background-color: rgb(235, 251, 253);
+	transition: 0.5s;
+}
+.smartcard:hover
+{
+	background-color: rgb(252, 253, 233);
+	transition: 0.5s;
+}
+.suscard:hover
+{
+	background-color: rgb(254, 235, 235);
+	transition: 0.5s;
+}
+.wellcard:hover
+{
+	background-color: rgb(238, 254, 240);
+	transition: 0.5s;
+}
+
+.foundationscard > * {
+	margin: 0px;
+	padding: 0px;
+	justify-content: center;
+	align-items: center;
+}
+
+.foundationscard > p {
+	justify-self: baseline;
+	font-size: 20px;
+	font-family: "The Mix Black Plain", sans-serif;
+	color: rgb(60, 60, 60);
+}
+
+.foundationscard {
+	padding: 20px;
+	margin: 20px;
+	border-radius: 8px;
+	align-content: center;
+}
+
+.foundationscard h3
+{
+	font-family: 'The Mix Black' , sans-serif;
+}
+
+.parallax {
+	/* Parallax effect */
+	height: 80vh; /* Full height for each parallax section */
+	background-attachment: fixed;
+	/* fixed to the html */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* center of the screen, no repitition */
+}

@@ -1,0 +1,38 @@
+.explorethevision {
+	background-image: url("../images/Shared-Space-at-BDD.png");
+}
+
+.explorethevision > div {
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+}
+
+.explorethevision > div > a {
+	width: 40%;
+	height: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	background-image: url("../images/video-3.jpg");
+	text-decoration: none;
+}
+
+.explorethevision > div > a > i {
+	scale: 4;
+}
+
+.explorethevision > div > a > img {
+	scale: 1;
+	width: 20%;
+	height: 20%;
+}
+
+.explorethevision > div > h1 {
+	color: white;
+}

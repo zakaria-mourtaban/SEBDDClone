@@ -1,0 +1,79 @@
+.joinourcommunity {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 150vh;
+}
+
+.joinourcommunity > div {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.joincardsdiv {
+	display: flex;
+	width: 50vw;
+}
+
+.imgdiv {
+	display: flex;
+	align-items: flex-start;
+	width: 30vw;
+}
+
+.imgdiv > img {
+	max-width: 100%;
+}
+
+.joinproscards {
+	min-width: 12vw;
+	min-height: 80vh;
+	background-color: rgba(0, 0, 0, 0.011);
+	background-image: url(../images/bg-icon.png);
+	border-radius: 10px;
+	margin-right: 5px;
+	padding: 20px;
+}
+
+.cardhover:hover
+{
+	scale: 1.05;
+	border-radius: 5px;
+	box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.25);
+	transition: 0.25s;
+}
+.joinproscards > h1 {
+	font-size: 20px;
+}
+
+.joincardsdiv {
+	width: 60vw;
+	margin-right: 40px;
+}
+
+.joinproscards button
+{
+	height: 5vh;
+}
+
+.downloadappdiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.downloadappdiv > div {
+	display: flex;
+	justify-content: space-between;
+	max-width: 60vw;
+	max-height: 20vh;
+	align-items: center;
+}
+
+.downloadappdiv > div {
+	width: 100%;
+	height: 100%;
+	scale: 0.7;
+}
