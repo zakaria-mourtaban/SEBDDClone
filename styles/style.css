@@ -2,6 +2,8 @@ html,
 body {
 	margin: 0%;
 	padding: 0%;
+	overflow-x: hidden;
+	font-family: "The Mix Black", sans-serif;
 }
 
 /* reset margin and padding */
@@ -18,12 +20,27 @@ header {
 	padding-right: 20px;
 	background-color: rgba(0, 0, 0, 0.6);
 	color: white;
+	font-weight: 400;
+}
+
+button {
+	background-color: #0078be;
+	width: 8vw;
+	border-radius: 50px;
+	border-width: 0px;
+	margin-left: 10px;
+	color: white;
 }
 
 header > img {
 	max-width: 100vw;
 	max-height: 7vh;
 }
+
+header li {
+	margin-left: 2vw;
+}
+
 .dropdown {
 	flex: 2;
 	display: flex;
@@ -51,13 +68,30 @@ header > img {
 	display: block;
 }
 
+.dropdown:hover > ul
+{
+	background-color: white;
+	color: rgb(41, 41, 41);
+	border-radius: 5px;
+	}
+
 .dropdown:hover {
+	
 	align-self: flex-start;
 	justify-self: center;
 }
 
 .anchor {
 	flex: 1;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.anchor:hover
+{
+	background-color: rgba(255, 255, 255, 0.402);
+	transition: 0.5s;
 }
 
 .dropdown > div > i {
@@ -128,20 +162,47 @@ nav {
 }
 
 .foundationssection {
-	height: 110vh;
+	height: 100vh;
 	display: flex;
 	justify-content: space-evenly;
 }
 
 .foundationscard {
 	width: 15vw;
-	height: 90vh;
+	height: 85vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: baseline;
 	flex-wrap: wrap;
 	align-items: center;
 	background-color: rgb(243, 242, 239);
+}
+
+.comcard:hover
+{
+	background-color: rgb(238, 236, 255);
+	transition: 0.5s;
+}
+
+.sharecard:hover
+{
+	background-color: rgb(235, 251, 253);
+	transition: 0.5s;
+}
+.smartcard:hover
+{
+	background-color: rgb(252, 253, 233);
+	transition: 0.5s;
+}
+.suscard:hover
+{
+	background-color: rgb(254, 235, 235);
+	transition: 0.5s;
+}
+.wellcard:hover
+{
+	background-color: rgb(238, 254, 240);
+	transition: 0.5s;
 }
 
 .foundationscard > * {
@@ -154,6 +215,8 @@ nav {
 .foundationscard > p {
 	justify-self: baseline;
 	font-size: 20px;
+	font-family: "The Mix Black Plain", sans-serif;
+	color: rgb(60, 60, 60);
 }
 
 .foundationscard {
@@ -161,6 +224,11 @@ nav {
 	margin: 20px;
 	border-radius: 8px;
 	align-content: center;
+}
+
+.foundationscard h3
+{
+	font-family: 'The Mix Black' , sans-serif;
 }
 
 .parallax {
@@ -251,6 +319,13 @@ nav {
 	padding: 20px;
 }
 
+.cardhover:hover
+{
+	scale: 1.05;
+	border-radius: 5px;
+	box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.25);
+	transition: 0.25s;
+}
 .joinproscards > h1 {
 	font-size: 20px;
 }
@@ -258,6 +333,11 @@ nav {
 .joincardsdiv {
 	width: 60vw;
 	margin-right: 40px;
+}
+
+.joinproscards button
+{
+	height: 5vh;
 }
 
 .downloadappdiv {
@@ -283,6 +363,7 @@ nav {
 
 .bddhub {
 	background-image: url("../images/parallax-light.jpg");
+	height: 100vh;
 }
 
 .bddhub > div {
@@ -292,25 +373,22 @@ nav {
 	flex-direction: column;
 }
 
-.bddhub > div > div
-{
+.bddhub > div > div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.bddhub > div > div > div
-{
+.bddhub > div > div > div {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 15vw;
-	margin: 5vw;
+	width: 20vw;
+	margin: 2vw;
 }
 
-.whatstrending
-{
+.whatstrending {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -320,50 +398,106 @@ nav {
 	background-color: rgba(241, 241, 241, 0.548);
 }
 
-.whatstrending > div
-{
+.whatstrending > div {
 	display: flex;
 	justify-content: center;
 	align-items: baseline;
 }
-.whatstrending > div > div
-{
+.whatstrending > div > div {
 	width: 20vw;
 	margin: 20px;
-	background-color: rgb(255, 255, 255);	
+	background-color: rgb(255, 255, 255);
 }
 
-.whatstrending > div > div > img
-{
+.whatstrending > div > div > img {
 	width: 100%;
 }
 
-.wordsfromcommunity
-{
+.wordsfromcommunity {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	height: 60vh;
 }
 
-.wordsfromcommunity > div
-{
+.wordsfromcommunity > div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	max-width: 60vw;
 }
 
-.wordsfromcommunity > h1
-{
+.wordsfromcommunity > h1 {
 	max-width: 20vw;
 	text-align: center;
 }
 
-.wordsfromcommunity > div > img
-{
+.wordsfromcommunity > div > img {
 	width: 20vw;
 	margin: 20px;
 }
 
+footer {
+	display: flex;
+	background-color: rgb(34, 34, 34);
+	justify-content: space-around;
+	color: white;
+}
 
+footer a {
+	text-decoration: none;
+	color: white;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul,
+footer li {
+	margin: 0;
+	padding: 0;
+}
+
+footer > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+footer > div > div {
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+}
+
+footer > div > div > div {
+	margin: 20px;
+}
+
+footer .downloadappdiv {
+	display: flex;
+	flex-direction: row;
+}
+
+footer .downloadappdiv img {
+	width: 12vw;
+	margin: 5px;
+}
+
+footer h6 {
+	margin: 10px;
+}
+
+@font-face {
+	font-family: "Anago";
+	src: url("../fonts/FontsFree-Net-Anago2.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "The Mix Black";
+	src: url("../fonts/TheMixBlack-Caps.otf") format("opentype");
+}
