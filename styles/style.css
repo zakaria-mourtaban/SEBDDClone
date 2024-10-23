@@ -7,6 +7,7 @@ body {
 /* reset margin and padding */
 
 header {
+	z-index: 10;
 	position: fixed;
 	display: flex;
 	width: 96vw;
@@ -144,43 +145,40 @@ nav {
 }
 
 .foundationscard > * {
-    margin: 0px;
-    padding: 0px;
-    justify-content: center;
-    align-items: center;
+	margin: 0px;
+	padding: 0px;
+	justify-content: center;
+	align-items: center;
 }
 
 .foundationscard > p {
-    justify-self: baseline;
+	justify-self: baseline;
 	font-size: 20px;
 }
 
-.foundationscard
-{
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    align-content: center;
+.foundationscard {
+	padding: 20px;
+	margin: 20px;
+	border-radius: 8px;
+	align-content: center;
 }
 
 .parallax {
-    /* Parallax effect */
-    height: 80vh; /* Full height for each parallax section */
-    background-attachment: fixed;
+	/* Parallax effect */
+	height: 80vh; /* Full height for each parallax section */
+	background-attachment: fixed;
 	/* fixed to the html */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	/* center of the screen, no repitition */
 }
 
-.explorethevision
-{
+.explorethevision {
 	background-image: url("../images/Shared-Space-at-BDD.png");
 }
 
-.explorethevision > div
-{
+.explorethevision > div {
 	background-color: rgba(0, 0, 0, 0.3);
 	width: 100%;
 	display: flex;
@@ -190,8 +188,7 @@ nav {
 	height: 100%;
 }
 
-.explorethevision > div > a
-{
+.explorethevision > div > a {
 	width: 40%;
 	height: 60%;
 	display: flex;
@@ -202,19 +199,141 @@ nav {
 	text-decoration: none;
 }
 
-.explorethevision > div > a > i
-{
+.explorethevision > div > a > i {
 	scale: 4;
 }
 
-.explorethevision > div > a > img
-{
+.explorethevision > div > a > img {
 	scale: 1;
 	width: 20%;
 	height: 20%;
 }
 
-.explorethevision > div > h1
-{
+.explorethevision > div > h1 {
 	color: white;
+}
+
+.joinourcommunity {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 150vh;
+}
+
+.joinourcommunity > div {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.joincardsdiv {
+	display: flex;
+	width: 50vw;
+}
+
+.imgdiv {
+	display: flex;
+	align-items: flex-start;
+	width: 30vw;
+}
+
+.imgdiv > img {
+	max-width: 100%;
+}
+
+.joinproscards {
+	min-width: 12vw;
+	min-height: 80vh;
+	background-color: rgba(0, 0, 0, 0.011);
+	background-image: url(../images/bg-icon.png);
+	border-radius: 10px;
+	margin-right: 5px;
+	padding: 20px;
+}
+
+.joinproscards > h1 {
+	font-size: 20px;
+}
+
+.joincardsdiv {
+	width: 60vw;
+	margin-right: 40px;
+}
+
+.downloadappdiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.downloadappdiv > div {
+	display: flex;
+	justify-content: space-between;
+	max-width: 60vw;
+	max-height: 20vh;
+	align-items: center;
+}
+
+.downloadappdiv > div {
+	width: 100%;
+	height: 100%;
+	scale: 0.7;
+}
+
+.bddhub {
+	background-image: url("../images/parallax-light.jpg");
+}
+
+.bddhub > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.bddhub > div > div
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bddhub > div > div > div
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 15vw;
+	margin: 5vw;
+}
+
+.whatstrending
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url("../images/bg-icon-empty.png");
+	height: 100%;
+	background-color: rgba(241, 241, 241, 0.548);
+}
+
+.whatstrending > div
+{
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+}
+.whatstrending > div > div
+{
+	width: 20vw;
+	margin: 20px;
+	background-color: rgb(255, 255, 255);	
+}
+
+.whatstrending > div > div > img
+{
+	width: 100%;
 }
